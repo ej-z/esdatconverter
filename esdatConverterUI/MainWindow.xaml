@@ -1,0 +1,30 @@
+﻿<Window x:Class="esdatConverterUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:esdatConverterUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0">Lab Info File</Label>
+        <TextBox Name="LabInfoFileTB" Grid.Row="0" Grid.Column="1"></TextBox>
+        <Button Grid.Row="0" Grid.Column="2" Content="..." Click="LabInfoFile_Click"></Button>
+        <Label Grid.Row="1" Grid.Column="0">Lab Data File</Label>
+        <TextBox Name="LabDataFileTB" Grid.Row="1" Grid.Column="1"></TextBox>
+        <Button Grid.Row="1" Grid.Column="2" Content="..." Click="LabDataFile_Click"></Button>
+
+        <Button Grid.Row="2" Grid.ColumnSpan="3" Content="Generate chemistry file" Click="Generate_Click"></Button>
+    </Grid>
+</Window>
